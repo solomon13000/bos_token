@@ -1,0 +1,53 @@
+.margin-bottom div{
+	margin-bottom: 15px;
+}
+
+div.panel-footer{
+	background-color: #ffffff;
+}
+
+.align-right{
+	text-align:right !important; 
+	background-color: #ffffff;
+}
+
+.employeeGrid{
+   width: 100%;
+}
+
+.btn-toolbar .btn{
+    margin-left: 2px;
+    margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.sweet-overlay, .sweet-alert{
+    position: absolute!important;
+	overflow: hidden;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.pull-right{
+	padding-top:30px;
+	padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	#topFixedNavbar1
+	{
+	  overflow-y: scroll !important;
+	  max-height: 100px !important;
+	}
+}

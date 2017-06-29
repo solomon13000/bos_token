@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form Validator Expert</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="assets/vendor/bootstrap-validator/dist/validator.min.js"></script>
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <form role="form" data-toggle="validator">
+        <div>
+	<div class="modal-header">
+		<h4 class="modal-title">Add Employee</h4>
+	</div>
+	<div class="modal-body">
+		<table class="table table-responsive table-hover table-condensed">
+			<div class="form-group margin-bottom">
+				<label for="name" class="col-sm-2 control-label">Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" data-minlength="5" data-error="Please enter name field." id="name" ng-model="employee.name" required />
+                                       <div class="help-block with-errors"></div>
+				</div>
+			</div>
+			<div class="form-group margin-bottom">
+				<label for="age" class="col-sm-2 control-label">Age</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="age" data-minlength="5" data-error="Please enter name field." ng-model="employee.age">
+                                        <div class="help-block with-errors"></div>
+				</div>
+			</div>
+			<div class="form-group margin-bottom">
+				<label for="gender" class="col-sm-2 control-label">Gender</label>
+				<div class="col-sm-10">
+					<select class="form-control" type="text" name="gender" id="gender" ng-model="employee.gender">                    
+						<option>male</option>
+						<option>female</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group margin-bottom">
+				<label for="company" class="col-sm-2 control-label">Company</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" data-minlength="5" data-error="Please enter name field." id="company" ng-model="employee.company">
+                                        <div class="help-block with-errors"></div>
+				</div>
+			</div>
+		</table>
+	</div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-secondary" ng-click="addEmployee()" data-dismiss="modal">Add</button>
+        <button type="button" class="btn btn-secondary" ng-click="closeEmployee()" data-dismiss="modal">Close</button>
+    </div>
+</div>
+        </form>        
+        <input type="text" class="form-control" data-error="Please enter name field." id="name" ng-model="employee.name" required />
+        <div class="help-block with-errors"></div>
+    </body>
+</html>

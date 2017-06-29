@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "POS",
+  "description": "Point of Sale System",
+  "version": "1.0.0",
+  "main": "",
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "fontawesome",
+    "jquery"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "fontawesome#~4.6.1",
+    "jquery-ui": "~1.11.4"
+  },
+  "devDependencies": {},
+  "repository": {},
+  "ignore": [],
+  "authors": "",
+  "license": "MIT",
+  "resolutions": {
+    "angular": ">=1.2.26 <1.7",
+    "angular-bootstrap": "^1.1.2"
+  }
+}
